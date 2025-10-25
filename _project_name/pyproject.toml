@@ -1,0 +1,15 @@
+[project]
+name = "some-name"
+version = "0.0.0"
+authors = [{name = "Artem Shumilov", email = "frogwithcode@gmail.com"}]
+description = "some text"
+
+[tool.pytest.ini_options]
+pythonpath = ["src"]
+
+[tool.coverage.run]
+source = ["src"]
+omit = [
+    "*/__main__.py",
+    "*/__init__.py",
+]
